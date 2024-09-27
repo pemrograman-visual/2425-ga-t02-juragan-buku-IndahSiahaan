@@ -25,18 +25,16 @@ public class T02 {
         if (rating >= 4.7) {
             kategori = "Best Pick";
         } else {
-            if (rating >= 4.5) {
+            if (rating >= 4.5 && rating < 4.7) {
                 kategori = "Must Read";
             } else {
-                if (rating >= 4.0) {
+                if (rating >= 4.0 && rating < 4.5) {
                     kategori = "Recommended";
                 } else {
-                    if (rating >= 3.0) {
+                    if (rating >= 3.0 && rating < 4.0) {
                         kategori = "Average";
                     } else {
-                        if (rating <= 3.0) {
-                            kategori = "Low";
-                        }
+                        kategori = "Low";
                     }
                 }
             }
