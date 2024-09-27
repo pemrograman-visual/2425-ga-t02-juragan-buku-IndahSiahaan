@@ -22,7 +22,7 @@ public class T02 {
         hargaPembelian = Double.parseDouble(input.nextLine());
         minimumMargin = Double.parseDouble(input.nextLine());
         rating = Double.parseDouble(input.nextLine());
-        if (rating >= 4.7) {
+        if (rating >= 4.7 && rating <= 5) {
             kategori = "Best Pick";
         } else {
             if (rating >= 4.5 && rating < 4.7) {
