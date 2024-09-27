@@ -4,24 +4,27 @@
 import java.util.*;
 import java.lang.Math;
 
+import java.util.*;
+import java.lang.Math;
+
 public class T02 {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
         String iSBN, judul, penulis, penerbit, formatBukuElektronik, kategori;
-        int tahunTerbit, stok, rating;
-        double hargaPembelian, minimumMargin;
+        int tahunTerbit, stok;
+        double hargaPembelian, minimumMargin, rating;
 
         iSBN = input.nextLine();
         judul = input.nextLine();
         penulis = input.nextLine();
         penerbit = input.nextLine();
         formatBukuElektronik = input.nextLine();
-        tahunTerbit = input.nextInt();
-        stok = input.nextInt();
-        hargaPembelian = input.nextDouble();
-        minimumMargin = input.nextDouble();
-        rating = input.nextInt();
+        tahunTerbit = Integer.parseInt(input.nextLine());
+        stok = Integer.parseInt(input.nextLine());
+        hargaPembelian = Double.parseDouble(input.nextLine());
+        minimumMargin = Double.parseDouble(input.nextLine());
+        rating = Double.parseDouble(input.nextLine());
         if (rating >= 4.7) {
             kategori = "Best Pick";
         } else {
