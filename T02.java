@@ -4,9 +4,6 @@
 import java.util.*;
 import java.lang.Math;
 
-import java.util.*;
-import java.lang.Math;
-
 public class T02 {
     private static Scanner input = new Scanner(System.in);
 
@@ -20,11 +17,11 @@ public class T02 {
         penulis = input.nextLine();
         penerbit = input.nextLine();
         formatBukuElektronik = input.nextLine();
-        tahunTerbit = Integer.parseInt(input.nextLine());
-        stok = Integer.parseInt(input.nextLine());
-        hargaPembelian = Double.parseDouble(input.nextLine());
-        minimumMargin = Double.parseDouble(input.nextLine());
-        rating = Double.parseDouble(input.nextLine());
+        tahunTerbit = input.nextInt();
+        stok = input.nextInt();
+        hargaPembelian = input.nextDouble();
+        minimumMargin = input.nextDouble();
+        rating = input.nextDouble();
         if (rating >= 4.7) {
             kategori = "Best Pick";
         } else {
